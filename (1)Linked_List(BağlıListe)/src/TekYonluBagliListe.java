@@ -52,13 +52,5 @@ public class TekYonluBagliListe {
         }
         return toplam;
     }
-
-
-
-
-
     boolean bosMu(){return bas==null;}
-
-
-
 }
