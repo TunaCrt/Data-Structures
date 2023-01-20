@@ -11,11 +11,11 @@ public class Arayüz extends JFrame {
     private JButton tersÇevirButton;
     private JPanel mainPanel;
     private JLabel sonuç;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
+    private JButton basaEkleButton1;
+    private JButton sonaEkleButton1;
+    private JButton bastanSilButton1;
+    private JButton sondanSilButton1;
+    private JButton maxButton1;
     private JButton maxButton;
     private JButton tersÇevirButton1;
     private JLabel sonuç2;
