@@ -20,6 +20,7 @@ public class Arayüz extends JFrame {
     private JButton tersÇevirButton1;
     private JLabel sonuç2;
     TekYonluBagliListe t1=new TekYonluBagliListe();
+    CiftYonluBagliListe c1=new CiftYonluBagliListe();
     public Arayüz() {
         setContentPane(mainPanel);
         setTitle("Odev4");
@@ -61,6 +62,42 @@ public class Arayüz extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 sonuç2.setText(String.valueOf(t1.max()));
+            }
+        });
+        basaEkleButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Eleman yeni=new Eleman(Integer.parseInt(textField1.getText()));
+                c1.basaEkle(yeni);
+                sonuç.setText(c1.cikti());
+            }
+        });
+        sonaEkleButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Eleman yeni=new Eleman(Integer.parseInt(textField1.getText()));
+                c1.sonaEkle(yeni);
+                sonuç.setText(c1.cikti());
+            }
+        });
+        bastanSilButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                c1.bastanSil();
+                sonuç.setText(c1.cikti());
+            }
+        });
+        sondanSilButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                c1.sondanSil();
+                sonuç.setText(c1.cikti());
+            }
+        });
+        maxButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sonuç2.setText(String.valueOf(c1.max()));
             }
         });
     }

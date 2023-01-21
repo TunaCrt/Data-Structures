@@ -6,14 +6,19 @@ public class CiftYonluBagliListe {
         son=null;
     }void basaEkle(Eleman yeni){
         if (!bosMu()){
+            bas.geri=yeni;
             yeni.ileri=bas;
             bas=yeni;
-        }else bas=yeni;
+        }else{ bas=yeni;
+        son=yeni;
+        }
+
 
     }void sonaEkle(Eleman yeni){
         if (!bosMu()){
             son.ileri=yeni;
-            son=yeni;
+            yeni.geri=son;
+
         }else bas=yeni;
 
         son=yeni;

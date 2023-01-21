@@ -88,14 +88,6 @@
           <text value="BastanSil"/>
         </properties>
       </component>
-      <component id="b549d" class="javax.swing.JButton" binding="sondanSilButton1" default-binding="true">
-        <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="SondanSil"/>
-        </properties>
-      </component>
       <component id="64dfd" class="javax.swing.JButton" binding="maxButton1" default-binding="true">
         <constraints>
           <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -155,6 +147,14 @@
         </constraints>
         <properties>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="b549d" class="javax.swing.JButton" binding="sondanSilButton1" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SondanSil"/>
         </properties>
       </component>
     </children>
