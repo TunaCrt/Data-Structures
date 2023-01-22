@@ -21,14 +21,6 @@
           <text value="Push"/>
         </properties>
       </component>
-      <component id="e3b83" class="javax.swing.JButton" binding="popButton" default-binding="true">
-        <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Pop"/>
-        </properties>
-      </component>
       <component id="64c2c" class="javax.swing.JButton" binding="topButton" default-binding="true">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -99,6 +91,22 @@
         </constraints>
         <properties>
           <text value="   "/>
+        </properties>
+      </component>
+      <component id="e3b83" class="javax.swing.JButton" binding="popButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pop"/>
+        </properties>
+      </component>
+      <component id="25ca8" class="javax.swing.JLabel" binding="Top_pop">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
         </properties>
       </component>
     </children>

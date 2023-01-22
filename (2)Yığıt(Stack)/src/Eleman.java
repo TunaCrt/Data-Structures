@@ -1,4 +1,4 @@
-public class Eleman {
+public class Eleman {//yığıy için bağlı liste yapısı
     int icerik;
     Eleman ileri;
 

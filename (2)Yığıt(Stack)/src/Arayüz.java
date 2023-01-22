@@ -12,12 +12,13 @@ public class Arayüz extends JFrame {
     private JButton pushButton1;
     private JButton popButton1;
     private JButton topButton1;
-    Yığıt y1=new Yığıt();
-    YığıtD y2=new YığıtD(5);
+    private JLabel Top_pop;
+    Yığıt y1=new Yığıt();//bağlı liste yığıt
+    YığıtD y2=new YığıtD(5);//dizi yığıt
 
     public Arayüz() {
         setContentPane(mainPanel);
-        setTitle("Odev4");
+        setTitle("Yığıt");
         setSize(350, 400);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
@@ -32,7 +33,7 @@ public class Arayüz extends JFrame {
         popButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                y1.pop();
+                Top_pop.setText("pop edilen eleman :"+y1.pop().icerik);
                 sonuç.setText(y1.çıktı());
             }
         });
@@ -47,8 +48,20 @@ public class Arayüz extends JFrame {
         popButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                y2.pop();
+                Top_pop.setText("pop edilen eleman:"+y2.pop().icerik);
                 sonuç.setText(y2.çıktı());
+            }
+        });
+        topButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Top_pop.setText("Top edilen eleman:"+y1.top().icerik);
+            }
+        });
+        topButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Top_pop.setText("Top :"+y2.pop().icerik);
             }
         });
     }

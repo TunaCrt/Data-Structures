@@ -1,4 +1,4 @@
-public class YığıtD {
+public class YığıtD {//dizi kullanılarak yapılan yığıt yapısı(statik)
     int N;
     Eleman dizi[];
     int üst;

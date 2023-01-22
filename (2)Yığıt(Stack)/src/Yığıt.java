@@ -1,5 +1,5 @@
 public class Yığıt {
-    Eleman üst;
+    Eleman üst;//bağlı liste kullanılarak yapılan yığıt yapısı
     public Yığıt() {
         üst=null;
     }
