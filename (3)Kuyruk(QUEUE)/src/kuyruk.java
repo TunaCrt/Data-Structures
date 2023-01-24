@@ -1,5 +1,5 @@
 public class kuyruk {
-    Eleman2 bas,son;
+    Eleman bas,son;
     kuyruk(){
         bas=null;
         son=null;
@@ -7,8 +7,8 @@ public class kuyruk {
     boolean bosmu(){
         return bas==null;
     }
-    public void ekle(Eleman2 yeni){
-        if (!bosmu()){
+    public void ekle(Eleman yeni){
+        if (bosmu()){
             bas=yeni; son=yeni;
         }else {
             son.ileri=yeni;
@@ -16,7 +16,7 @@ public class kuyruk {
         }
     }
     Eleman sil(){
-        Eleman2 sonuç;
+        Eleman sonuç;
         if (!bosmu()){
             sonuç=bas;
             bas=bas.ileri;
@@ -25,5 +25,15 @@ public class kuyruk {
             }
         }
         return null;
+    }String listele(){
+        String sonuç="";
+        Eleman tmp=bas;
+        if (!bosmu()){
+            while (tmp!=null){
+                sonuç=sonuç+tmp.icerik+"<-";
+                tmp= tmp.ileri;
+            }
+        }
+        return sonuç;
     }
 }

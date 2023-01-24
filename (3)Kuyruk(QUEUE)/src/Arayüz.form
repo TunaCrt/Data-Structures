@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Arayüz">
-  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
@@ -18,10 +18,10 @@
       </component>
       <vspacer id="26793">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="d134b" class="javax.swing.JButton" binding="ekleButton" default-binding="true">
+      <component id="d134b" class="javax.swing.JButton" binding="ekleButton">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -29,7 +29,7 @@
           <text value="ekle"/>
         </properties>
       </component>
-      <component id="90c67" class="javax.swing.JButton" binding="ekleButton1" default-binding="true">
+      <component id="90c67" class="javax.swing.JButton" binding="çevrimselEkle">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -37,7 +37,7 @@
           <text value="ekle"/>
         </properties>
       </component>
-      <component id="7b84" class="javax.swing.JButton" binding="ekleButton2" default-binding="true">
+      <component id="7b84" class="javax.swing.JButton" binding="kuyrukEkle">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -53,7 +53,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="355ba" class="javax.swing.JButton" binding="silButton" default-binding="true">
+      <component id="355ba" class="javax.swing.JButton" binding="kaydırmalıSil">
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -61,7 +61,7 @@
           <text value="sil"/>
         </properties>
       </component>
-      <component id="e318c" class="javax.swing.JButton" binding="silButton1" default-binding="true">
+      <component id="e318c" class="javax.swing.JButton" binding="çevrimselSil">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -69,7 +69,7 @@
           <text value="sil"/>
         </properties>
       </component>
-      <component id="7cfb3" class="javax.swing.JButton" binding="silButton2" default-binding="true">
+      <component id="7cfb3" class="javax.swing.JButton" binding="KuyrukSil">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -99,54 +99,6 @@
         </constraints>
         <properties>
           <text value="BağlıListeKuyruk"/>
-        </properties>
-      </component>
-      <component id="7435d" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="kaydırmalı"/>
-        </properties>
-      </component>
-      <component id="b1c90" class="javax.swing.JButton" binding="ekleButton3" default-binding="true">
-        <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="ekle"/>
-        </properties>
-      </component>
-      <component id="57743" class="javax.swing.JButton" binding="silButton3" default-binding="true">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="sil"/>
-        </properties>
-      </component>
-      <component id="2ad01" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="çevrimsel"/>
-        </properties>
-      </component>
-      <component id="3c2d0" class="javax.swing.JButton" binding="ekleButton4" default-binding="true">
-        <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Ekle"/>
-        </properties>
-      </component>
-      <component id="fe719" class="javax.swing.JButton" binding="silButton4" default-binding="true">
-        <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="sil"/>
         </properties>
       </component>
     </children>
