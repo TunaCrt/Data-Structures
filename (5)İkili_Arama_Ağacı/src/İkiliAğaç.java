@@ -39,15 +39,11 @@ public class İkiliAğaç {
     }Eleman sil(int sayi){// silmek için 3 farklı durum vardır
         Eleman tmp=kök;
         Eleman önceki=null;
-        while (tmp.sag!=null ||tmp.sol!=null &&tmp.icerik!=sayi){
+        while (/*tmp.sag!=null ||tmp.sol!=null && */tmp.icerik!=sayi){
             önceki=tmp;
             if (tmp.icerik<sayi)tmp=tmp.sag;
             else if (tmp.icerik>sayi)tmp=tmp.sol;
         }//sayiyi bulduk burada sileceğiz
-
-
-
-
 
                 if (tmp.sol==null && tmp.sag==null){//1.)silinecek düğümün hiç çocuğu olmaması
                     System.out.println("çocuksuz düğüm siliniyor");
@@ -57,7 +53,13 @@ public class İkiliAğaç {
                     return tmp;
                 }
                 else if (tmp.sag!=null && tmp.sol!=null){//3.)silinecek düğümün 2 çocuğu olması
-                    System.out.println("2 çocuk'lu düğüm");
+                    System.out.println("2 çocuk'lu düğüm siliniyor");
+                   /* tmp=azami(tmp.sol);
+                    sil(azami(tmp.sol).icerik);*/
+
+                    tmp=sil(azami(tmp.sol).icerik);
+
+                    return tmp;
                 }else {//silinecek düğümün 1 çocuğu olması
                     System.out.println("1 çocuk'lu düğüm siliniyor");
                     if (tmp==kök && tmp.sol==null)kök=tmp.sag;
@@ -72,7 +74,7 @@ public class İkiliAğaç {
 
 
 
-        return null;
+
     }
     void güncelle(int yeni,int eski){
         sil(eski);

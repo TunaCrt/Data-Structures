@@ -4,10 +4,10 @@ public class Main {
 	İkiliAğaç i̇kiliAğaç=new İkiliAğaç();
     /*
                         5
-                     6     7
-                             11 onceki
+                           7
+                        6     11 onceki
                                 19 tmp
-                             17
+                             17    20
      */
         Eleman bı=new Eleman(5);
         Eleman a=new Eleman(7);
@@ -36,6 +36,15 @@ public class Main {
         System.out.println("---");
         System.out.println(i̇kiliAğaç.asgari(bı).icerik);
         System.out.println(i̇kiliAğaç.azami(bı).icerik);
+
+        System.out.println("---------------------------");
+        System.out.println(i̇kiliAğaç.sil(i̇kiliAğaç.azami(bı).icerik).icerik);
+        System.out.println(i̇kiliAğaç.sil(i̇kiliAğaç.azami(bı).icerik).icerik);
+        System.out.println(i̇kiliAğaç.sil(i̇kiliAğaç.azami(bı).icerik).icerik);
+        System.out.println(i̇kiliAğaç.sil(i̇kiliAğaç.azami(bı).icerik).icerik);
+        System.out.println(i̇kiliAğaç.sil(i̇kiliAğaç.azami(bı).icerik).icerik);
+        System.out.println(i̇kiliAğaç.sil(i̇kiliAğaç.azami(bı).icerik).icerik);
+
 
 
 
