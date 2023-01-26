@@ -30,7 +30,7 @@ public class Main {
         System.out.println(i̇kiliAğaç.ara(19).icerik);
 
 
-        System.out.println(i̇kiliAğaç.sil(19).icerik);
+        System.out.println(i̇kiliAğaç.sil(7).icerik);
 
 
         System.out.println("---");

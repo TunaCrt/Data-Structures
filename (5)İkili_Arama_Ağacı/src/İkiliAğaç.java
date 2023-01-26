@@ -57,7 +57,8 @@ public class İkiliAğaç {
                    /* tmp=azami(tmp.sol);
                     sil(azami(tmp.sol).icerik);*/
 
-                    tmp=sil(azami(tmp.sol).icerik);
+                    tmp.icerik=sil(azami(tmp.sol).icerik).icerik;
+
 
                     return tmp;
                 }else {//silinecek düğümün 1 çocuğu olması
