@@ -51,9 +51,10 @@ public class Main {
             continue1=false;
             for (int i=0;i<dizi.length-1;i++){
                 if (dizi[i]>dizi[i+1]){
-                    int tmp=dizi[i+1];
+                    yerdegistir(dizi,i,i+1);
+                    /* int tmp=dizi[i+1];
                     dizi[i+1]=dizi[i];
-                    dizi[i]=tmp;
+                    dizi[i]=tmp;  */
                     continue1=true;
                 }
             }
@@ -69,9 +70,10 @@ public class Main {
                     min=dizi[j];
                 }
             }
-            int tmp=dizi[j];
+            yerdegistir(dizi,i,j);
+            /*int tmp=dizi[j];
             dizi[j]=dizi[i];
-            dizi[j]=tmp;
+            dizi[j]=tmp;*/
         }
         return dizi;
     }static int[] insertionSort(int[] dizi){
@@ -81,9 +83,10 @@ public class Main {
             j=i;
             while (j>0){
                     if (dizi[i]>dizi[i+1]){
-                        int tmp=dizi[i+1];
+                        yerdegistir(dizi,i,i+1);
+                        /*int tmp=dizi[i+1];
                         dizi[i+1]=dizi[i];
-                        dizi[i]=tmp;
+                        dizi[i]=tmp;*/
                     }
                     j--;
             }
@@ -163,8 +166,7 @@ public class Main {
         return i+1;
 
     }static void yerdegistir(int[]A,int i,int j){
-        int tmp;
-        tmp=A[i];
+        int tmp=A[i];
         A[i]=A[j];
         A[j]=tmp;
     }
