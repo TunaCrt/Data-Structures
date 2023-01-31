@@ -52,9 +52,6 @@ public class Main {
             for (int i=0;i<dizi.length-1;i++){
                 if (dizi[i]>dizi[i+1]){
                     yerdegistir(dizi,i,i+1);
-                    /* int tmp=dizi[i+1];
-                    dizi[i+1]=dizi[i];
-                    dizi[i]=tmp;  */
                     continue1=true;
                 }
             }
@@ -71,9 +68,6 @@ public class Main {
                 }
             }
             yerdegistir(dizi,i,j);
-            /*int tmp=dizi[j];
-            dizi[j]=dizi[i];
-            dizi[j]=tmp;*/
         }
         return dizi;
     }static int[] insertionSort(int[] dizi){
@@ -84,9 +78,6 @@ public class Main {
             while (j>0){
                     if (dizi[i]>dizi[i+1]){
                         yerdegistir(dizi,i,i+1);
-                        /*int tmp=dizi[i+1];
-                        dizi[i+1]=dizi[i];
-                        dizi[i]=tmp;*/
                     }
                     j--;
             }
@@ -128,20 +119,7 @@ public class Main {
         L[n1]=Integer.MAX_VALUE;
         R[n2]=Integer.MAX_VALUE;
         i=0;j=0;
-
-
-
-        /*int[]c=new int[A.length+B.length];
-        int i=0;//A için
-        int j=0;
-        for (int k=0;k<c.length;k++){
-            if (A[i]<B[j]){
-                c[k]=A[i];
-                i++;
-            }else {
-                c[k]=B[j];
-                j++;
-            }return c;*/
+        
         }
 
      static void QuickSort(int[] A,int bas,int son){
