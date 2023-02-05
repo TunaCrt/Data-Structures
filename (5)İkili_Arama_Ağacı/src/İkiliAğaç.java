@@ -54,12 +54,7 @@ public class İkiliAğaç {
                 }
                 else if (tmp.sag!=null && tmp.sol!=null){//3.)silinecek düğümün 2 çocuğu olması
                     System.out.println("2 çocuk'lu düğüm siliniyor");
-                   /* tmp=azami(tmp.sol);
-                    sil(azami(tmp.sol).icerik);*/
-
                     tmp.icerik=sil(azami(tmp.sol).icerik).icerik;
-
-
                     return tmp;
                 }else {//silinecek düğümün 1 çocuğu olması
                     System.out.println("1 çocuk'lu düğüm siliniyor");
@@ -70,12 +65,7 @@ public class İkiliAğaç {
                     else önceki.sag=tmp.sol;
                     return tmp;
                 }
-
-
-
-
-
-
+                
     }
     void güncelle(int yeni,int eski){
         sil(eski);
