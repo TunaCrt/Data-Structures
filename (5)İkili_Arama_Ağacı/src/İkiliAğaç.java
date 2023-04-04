@@ -65,7 +65,7 @@ public class İkiliAğaç {
                     else önceki.sag=tmp.sol;
                     return tmp;
                 }
-                
+
     }
     void güncelle(int yeni,int eski){
         sil(eski);
